@@ -10,7 +10,7 @@ Instalar LaTeX
 
 OSX
 --------
-Instalar [mactex](http://tug.org/mactex/), es una descarga grane, pero tiene todo lo necesario para trabajar con LaTeX.
+Instalar [mactex](http://tug.org/mactex/), es una descarga grande, pero tiene todo lo necesario para trabajar con LaTeX.
 
 Linux
 -------
