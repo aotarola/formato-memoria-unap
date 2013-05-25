@@ -1,0 +1,44 @@
+\documentclass{../extra/memoriaicci}
+\titulo{TITULO DE MEMORIA}
+\grado{ACTIVIDAD DE TITULACION PARA OPTAR AL TITULO DE INGENIERO CIVIL EN COMPUTACION E INFORMATICA}
+\patrocinante{Nombre profesor}
+\alumno{Nombre alumno}
+
+\begin{document}
+
+\maketitle
+
+\begin{dedicatory}
+dedicatoria \ldots
+\end{dedicatory}
+
+\begin{acknowledgment}
+
+agradecimientos \ldots
+
+\end{acknowledgment}
+
+\tableofcontents
+\listoffigures
+\listoftables
+%\lstlistoflistings
+
+\begin{resumen}
+
+resumen \ldots
+
+\end{resumen}
+
+% Los capítulos se incluyen como archivos .tex por separados
+% En caso de no quere compilar alguno de los archivos, utilizar la funcion:
+
+% \includeonly{filename1.tex,filename2.tex,...}
+
+% Esto es útil para trabajar/compilar mas rapido y con un documento reducido
+\include{introduccion}
+\include{antecedentes}
+
+\bibliography{../extra/refs}
+
+\end{document}
+

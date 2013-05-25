@@ -1,0 +1,66 @@
+%!TEX root = indice.tex
+\chapter{ANTECEDENTES}
+
+\section{Seccion}
+\label{chap2:rest}
+
+\subsection{Sub Sección}
+
+Texto normal ``texto entre comillas''. Texto citado en refs.bib \cite{rthomas}.
+
+\textbf{texto en negrita} texto con nota a pie de página\footnote{nota de pié de página}.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[scale=0.7]{../img/chap2_rest_diagram.pdf}
+\caption{ejemplo inserciónd e imágen}
+\label{fig:restDiagram}
+\end{figure}
+
+Ejem`lo de referencia de imagen' \ref{fig:restDiagram}
+
+\subsubsection{Sub sub sección}
+
+Ejemplo de listado de items
+
+\begin{itemize}
+\item item 1
+\item item 2
+\item item N
+\end{itemize}
+
+ejemplo de URL formateada
+
+\url{http://www.biblioteca.cl/libros}
+
+Ejemplo de listado
+
+\lstset{language=XML}
+
+\begin{lstlisting}[caption=Listado de libros obtenido del Servicio Web., label=xmllisting]
+<?xml version="1.0"?>
+<p:Libros xmlns:p="http://www.biblioteca.cl"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <Libro id="231" xlink:href="http://www.biblioteca.cl/libros/231"/>
+  <Libro id="232" xlink:href="http://www.biblioteca.cl/libros/232"/>
+  <Libro id="233" xlink:href="http://www.biblioteca.cl/libros/233"/>
+  <Libro id="234" xlink:href="http://www.biblioteca.cl/libros/234"/>
+</p:Libros>
+\end{lstlisting}
+
+Ejemplo de resaltado en listado:
+
+\begin{lstlisting}[escapechar=!,caption=Libro en particular obtenido del Servicio Web.,label=xmlresourceforone]
+<?xml version="1.0"?>
+<p:Libro xmlns:p="http://www.biblioteca.cl"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+  <ID>234</ID>
+  <Titulo>Algoritmos Avanzados</Titulo>
+  <Resumen>Desarrollo avanzado de algoritmos</Resumen>
+  !\hl{\mbox{\bf $<$Especificacion xlink:href="http://www.biblioteca.cl/libros/234/especificacion" /$>$ }}!
+  <Valor moneda="CLP">2100</Valor>
+  <Disponible>True</Disponible>
+</p:Libro>
+\end{lstlisting}
+
+
